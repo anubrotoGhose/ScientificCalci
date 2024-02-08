@@ -206,6 +206,8 @@ class ScientificCalculator(tk.Tk):
                 self.display.insert(tk.END, str(result))
             except Exception as e:
                 messagebox.showerror("Error", str(e))
+        else:
+            self.display.insert(tk.END, char)
         
 
     def solve_complex(self, expression):
